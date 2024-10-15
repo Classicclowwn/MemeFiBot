@@ -10,9 +10,9 @@ class Settings(BaseSettings):
     API_HASH: str
 
     MIN_AVAILABLE_ENERGY: int = 100
-    SLEEP_BY_MIN_ENERGY: Union[list[int], int] = [1800, 3600]
+    SLEEP_BY_MIN_ENERGY: Union[list[int], int] = [1, 3]
 
-    ADD_TAPS_ON_TURBO: int = 2500
+    ADD_TAPS_ON_TURBO: int = 999999999
 
     AUTO_UPGRADE_TAP: bool = True
     MAX_TAP_LEVEL: int = 5
@@ -24,12 +24,12 @@ class Settings(BaseSettings):
     APPLY_DAILY_ENERGY: bool = True
     APPLY_DAILY_TURBO: bool = True
 
-    RANDOM_TAPS_COUNT: list[int] = [15, 75]
-    SLEEP_BETWEEN_TAP: list[int] = [15, 25]
+    RANDOM_TAPS_COUNT: list[int] = [999999, 999999999]
+    SLEEP_BETWEEN_TAP: list[int] = [1, 2]
 
     USE_PROXY_FROM_FILE: bool = False
 
-    USE_TAP_BOT: bool = False
+    USE_TAP_BOT: bool = True
     EMERGENCY_STOP: bool = False
 
 
